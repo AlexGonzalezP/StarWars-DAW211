@@ -1,0 +1,94 @@
+/*Fuente de Star Wars*/
+@font-face {
+    font-family: "StarWars"; 
+    src: url("../fonts/STARWARS.ttf") format("truetype");
+  }
+  
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Starwars";
+    
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 55% 45%;
+    background-image: url("../img/bg.png");
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+h2{
+    color: rgb(255, 210, 86);
+    margin-bottom: 10px;
+    font-size: large;
+}
+
+h3, p{
+    color: rgb(255, 210, 86);
+    margin-top: 10px;
+}
+
+img{
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 5px 5px 5px rgba(65, 65, 65, 0.829);
+}
+
+.carta{
+    width: 25%;
+    max-height: 35vh;
+    margin-left: -35px;
+    margin-right: -35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-image: url("../img/card_bg.jpg");
+    text-align: center;
+    justify-content: center; 
+    border-radius: 10px;
+    display: flex; 
+    flex-direction: column; 
+    border: solid 1px black;
+    box-shadow: 0 0 20px rgba(255, 216, 86, 0.829);
+}
+
+.carta h2{
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+
+#id1, #id5{
+    margin-top: 50px;
+}
+
+#id3{
+    margin-top: -80px;
+}
+
+#info h2{
+    font-size: 1.75rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#info h3{
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#info p{
+    text-align: center;
+    font-size: 1.25rem;
+    margin-top: 25px;
+}
+
+.estrella {
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    z-index: -1;
+  }
